@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Script Processor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div id="statusBanner" class="status-banner"></div>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Projects</h2>
+            <ul id="projects"></ul>
+        </aside>
+        <main>
+            <header>
+                <h1><i class="fas fa-video"></i> Productus</h1>
+            </header>
+              <div id="progressContainer" class="progress-container">
+                    <div id="progressBar" class="progress-bar"></div>
+                    <div id="progressText" class="progress-text"></div>
+                </div>
+            <div class="content-wrapper">
+                <section class="project-form">
+                    <h2>Create New Project</h2>
+                    <input type="text" id="projectName" name="projectName" placeholder="Project Name" required>
+                    <textarea id="script" name="script" placeholder="Enter your script here..." required></textarea>
+                    <button id="createProjectButton" class="btn primary"><i class="fas fa-plus"></i> Create Project</button>
+                </section>
+                <section class="project-actions">
+                        <label for="scriptPace">Script Pace:</label>
+    <input type="number" id="scriptPace" name="scriptPace" min="0.5" max="2" step="0.1" value="1">
+                    <button id="generateVideoButton" class="btn primary"><i class="fas fa-cog"></i> Generate Video</button>
+
+                </section>
+            
+              
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
